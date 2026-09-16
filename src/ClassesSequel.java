@@ -1,4 +1,4 @@
-public class MoreClasses {
+public class ClassesSequel {
     public static void main(String[] args) {
         Animal pet = new Animal("Harry", "this.animal");
         pet.getInfo();

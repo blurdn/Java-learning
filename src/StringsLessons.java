@@ -1,4 +1,4 @@
-public class StringsLesson {
+public class StringsLessons {
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder("Hello everybody");
         sb.append(" my name")
