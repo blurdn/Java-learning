@@ -28,3 +28,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### I don't wanna switch projects for this okay? ###
+src/Kata.java
