@@ -1,15 +1,23 @@
 package TestClasses;
 
 public class RPG extends Game {
-    private int lvl = 0;
+    public int lvl;
 
-    @Override
-    public void lose() {
-        System.out.println("You lost The TestClasses.RPG!\n");
+    public RPG() {
+
+    }
+
+    public RPG(int steamID) {
+        super(steamID);
+    }
+
+    public void showInfo() {
+        System.out.println("The game ID is " + steamID);
+        System.out.println("Current level is " + lvl + "\n");
     }
 
     public void levelUp() {
-        lvl++;
-        System.out.println("You leveled up! Your new level is " + lvl + "!\n"); // r/unexpectedFactorial
+        lvl += 1;
+        System.out.println("You leveled up! Your new level is " + lvl + "\n");
     }
 }

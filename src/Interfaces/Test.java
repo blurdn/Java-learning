@@ -1,5 +1,8 @@
 package Interfaces;
 
+import TestClasses.Game;
+import TestClasses.RPG;
+
 public class Test {
     public static void main(String[] args) {
         Info info1 = new Show("Breaking Bad");
