@@ -1,5 +1,8 @@
 package UpcastingAndDowncasting;
 
+import TestClasses.Game;
+import TestClasses.RPG;
+
 public class Test {
     public static void main(String[] args) {
         // Upcasting

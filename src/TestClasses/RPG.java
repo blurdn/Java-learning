@@ -1,11 +1,11 @@
-package Polymorphism;
+package TestClasses;
 
 public class RPG extends Game {
     private int lvl = 0;
 
     @Override
     public void lose() {
-        System.out.println("You lost The RPG!\n");
+        System.out.println("You lost The TestClasses.RPG!\n");
     }
 
     public void levelUp() {
