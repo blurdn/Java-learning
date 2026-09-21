@@ -1,9 +1,7 @@
-package Polymorphism;
-
 import TestClasses.Game;
 import TestClasses.RPG;
 
-public class Test {
+public class Polymorphism {
     public static void main(String[] args) {
         Game game = new RPG(); // defines only restrictions while using methods code from the child
         RPG rpg = new RPG();

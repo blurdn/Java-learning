@@ -1,9 +1,7 @@
-package UpcastingAndDowncasting;
-
 import TestClasses.Game;
 import TestClasses.RPG;
 
-public class Test {
+public class UpcastingAndDowncasting {
     public static void main(String[] args) {
         // Upcasting
         Game game = new RPG();
