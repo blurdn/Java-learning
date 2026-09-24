@@ -7,7 +7,7 @@ public class ExceptionsLearning {
     public static void main(String[] args) throws IOException, SadUserException {
         Scanner scanner = new Scanner(System.in);
 
-        while(true) {
+        while (true) {
             System.out.println("r u happy?");
             String response = scanner.nextLine();
 
