@@ -3,9 +3,7 @@ package TestClasses;
 public class RPG extends Game {
     public int lvl;
 
-    public RPG() {
-
-    }
+    public RPG() {}
 
     public RPG(int steamID) {
         super(steamID);
