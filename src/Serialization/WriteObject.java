@@ -9,12 +9,15 @@ public class WriteObject {
         Game game1 = new Game(253230, "A Hat in Time");
         Game game2 = new Game(2226280, "BAPBAP");
 
+        Game[] games = {game1, game2};
+
         try {
             FileOutputStream fos = new FileOutputStream("games.bin");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
 
             oos.writeObject(game1);
             oos.writeObject(game2);
+            oos.writeObject(games);
 
             oos.close();
         } catch (IOException e) {
