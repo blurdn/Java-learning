@@ -3,8 +3,9 @@ package Serialization;
 import java.io.Serializable; // makes class serializable
 
 public class Game implements Serializable {
-    long steamId;
-    String name;
+    transient long steamId;
+    private String name;
+    // transient - makes the field not serializable (serializes with default value)
 
     public Game(int steamId, String name) {
         this.steamId = steamId;

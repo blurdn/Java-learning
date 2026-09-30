@@ -7,15 +7,11 @@ import java.util.Arrays;
 
 public class ReadObject {
     public static void main(String[] args) {
-        try {
-            FileInputStream fis = new FileInputStream("games.bin");
-            ObjectInputStream ois = new ObjectInputStream(fis);
-
+        try (ObjectInputStream ois = new ObjectInputStream(new FileInputStream("games.bin"))){
+            // try-with-resources - don't need to close the stream manually if we do this ^^^^
             Game game1 = (Game) ois.readObject();
             Game game2 = (Game) ois.readObject();
             Game[] games = (Game[]) ois.readObject();
-
-            ois.close();
 
             System.out.println(game1);
             System.out.println(game2);
